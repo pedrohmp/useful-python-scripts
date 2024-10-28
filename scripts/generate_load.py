@@ -16,9 +16,6 @@ if total_records > date_range:
 # Gerar lista de todas as datas no intervalo
 all_dates = [start_date + datetime.timedelta(days=i) for i in range(date_range)]
 
-# Embaralhar a lista de datas
-random.shuffle(all_dates)
-
 # Selecionar as primeiras 40.000 datas únicas
 selected_dates = all_dates[:total_records]
 
